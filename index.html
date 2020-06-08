@@ -2,6 +2,13 @@
 var u = navigator.userAgent;
 var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-alert('是否是Android：'+isAndroid);
-alert('是否是iOS：'+isiOS);
+
+if(isAndroid){
+    location.href = "https://play.google.com/store/apps/details?id=com.Zoustec.SWCBTP109&fbclid=IwAR1quKyu13xWjqSbJ070JuLcWaTWMGAryU4RA_Mvoc12190CLZCU0s8Z7Ts"
+}elseif(isiOS){
+    location.href = "https://apps.apple.com/app/id1515415547?fbclid=IwAR1WiexJChyC50fSDaPI8Hr9ispPbDycW-C3geNetDicYlGxkFWec1izB18"
+}else{
+    location.href = "https://apps.apple.com/app/id1515415547?fbclid=IwAR1WiexJChyC50fSDaPI8Hr9ispPbDycW-C3geNetDicYlGxkFWec1izB18";
+}
+
 </script>
